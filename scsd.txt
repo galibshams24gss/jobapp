@@ -1,0 +1,9 @@
+if(filter_has_var(INPUT_POST, 'email')){
+	$email = $_POST['email'];
+	if(filter_input($email, FILTER_VALIDATE_EMAIL)){
+		echo "Email valid";
+	}
+	else{
+		echo "Email invalid";
+	}
+	}
